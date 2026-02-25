@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 
+import Welcome from "./Welcome";
+import Intro from "./Intro";
 import Login from "./Login";
 import Signup from "./Signup";
 import Info from "./Info";
@@ -10,7 +12,8 @@ import BMI from "./BMI";
 
 const App = () => {
 
-  const [screen, setScreen] = useState("login");
+  /* ✅ START SCREEN */
+  const [screen, setScreen] = useState("welcome");
 
   /* ✅ GLOBAL USER DATA */
   const [userData, setUserData] = useState({});
@@ -27,17 +30,23 @@ const App = () => {
   }, []);
 
   /* ✅ NAVIGATION */
+  const goToWelcome = () => setScreen("welcome");
   const goToLogin = () => setScreen("login");
   const goToSignup = () => setScreen("signup");
   const goToInfo = () => setScreen("info");
+  const goToIntro = () => setScreen("intro");
   const goToDiet = () => setScreen("diet");
   const goToResults = () => setScreen("results");
   const goToTips = () => setScreen("tips");
   const goToBMI = () => setScreen("bmi");
 
   /* ✅ SCREEN SWITCHING */
-
   switch (screen) {
+
+    case "welcome":
+      return (
+        <Welcome goToLogin={goToLogin} />
+      );
 
     case "login":
       return (
@@ -45,7 +54,7 @@ const App = () => {
           goToSignup={goToSignup}
           goToDiet={(user) => {
             setUserData(user);
-            setScreen("diet");
+            setScreen("intro");   /* ✅ SHOW INTRO PAGE */
           }}
         />
       );
@@ -66,9 +75,14 @@ const App = () => {
         <Info
           userData={userData}
           logout={goToLogin}
-          goToNext={() => setScreen("diet")}
+          goToNext={goToIntro}   /* ✅ AFTER INFO → INTRO */
           saveUserData={setUserData}
         />
+      );
+
+    case "intro":
+      return (
+        <Intro goToDiet={goToDiet} />
       );
 
     case "diet":
@@ -113,7 +127,10 @@ const App = () => {
       return (
         <BMI
           userData={userData}
+          selectedFoods={selectedFoods}
           goToDiet={goToDiet}
+          goToTips={goToTips}
+          goToResults={goToResults}
           goToInfo={goToInfo}
         />
       );

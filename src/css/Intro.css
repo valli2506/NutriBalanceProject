@@ -1,0 +1,82 @@
+.intro-page {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #eefaf3, #ffffff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.intro-card {
+  background: white;
+  max-width: 900px;
+  width: 100%;
+  padding: 45px 55px;
+  border-radius: 26px;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.08);
+  animation: fadeIn 0.5s ease;
+}
+
+.intro-card h1 {
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.intro-subtitle {
+  text-align: center;
+  color: #64748b;
+  margin-bottom: 28px;
+}
+
+.intro-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.step {
+  background: #f8fafc;
+  padding: 16px 18px;
+  border-radius: 14px;
+  border-left: 4px solid #22c55e;
+}
+
+.step h3 {
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+.step p {
+  font-size: 13px;
+  color: #475569;
+}
+
+.intro-card button {
+  margin-top: 30px;
+  width: 100%;
+  background: #0f172a;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 16px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.intro-card button:hover {
+  background: black;
+  transform: translateY(-2px);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
