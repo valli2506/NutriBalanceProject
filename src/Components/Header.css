@@ -1,0 +1,81 @@
+.header-wrapper {
+  width: 1200px;
+  margin: 0 auto 25px;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-section h1 {
+  margin: 0;
+  font-size: 34px;
+  color: #2e7d32;
+}
+
+.logo-section p {
+  margin: 4px 0 0;
+  color: #666;
+}
+
+.logout-btn {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 8px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* USER INFO */
+
+.user-info {
+  margin-top: 10px;
+  color: #555;
+}
+
+.food-tag {
+  background: #e8f5e9;
+  color: #2e7d32;
+  padding: 4px 10px;
+  border-radius: 12px;
+  margin-left: 10px;
+  font-size: 13px;
+}
+
+/* NAVIGATION */
+
+.top-nav {
+  display: flex;
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.nav-btn {
+  padding: 10px 22px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  background: white;
+  cursor: pointer;
+}
+
+.nav-btn.active {
+  background: #101828;
+  color: white;
+  border-color: #101828;
+}
+.logout-btn {
+  margin-left: 15px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: none;
+  background: #ef4444;
+  color: white;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.logout-btn:hover {
+  background: #dc2626;
+}

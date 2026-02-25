@@ -1,0 +1,110 @@
+.results-page {
+  min-height: 100vh;
+  background: #f5fbf7;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.results-wrapper {
+  width: 100%;
+  max-width: 1100px;
+}
+
+.results-container {
+  background: white;
+  padding: 35px;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  margin-top: 20px;
+}
+
+/* Titles */
+
+.results-container h2 {
+  margin-bottom: 5px;
+  font-size: 26px;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 25px;
+}
+
+/* ✅ Tip Cards */
+
+.tip-card {
+  padding: 18px 22px;
+  border-radius: 14px;
+  margin-bottom: 15px;
+  border-left: 6px solid;
+  background: #f8f8f8;
+}
+
+.tip-card h3 {
+  margin-bottom: 6px;
+  font-size: 18px;
+}
+
+.tip-card p {
+  margin: 0;
+  color: #444;
+}
+
+/* Colors */
+
+.tip-card.protein {
+  border-color: #4caf50;
+  background: #edf7ee;
+}
+
+.tip-card.fiber {
+  border-color: #ff9800;
+  background: #fff3e0;
+}
+
+.tip-card.minerals {
+  border-color: #2196f3;
+  background: #e3f2fd;
+}
+
+/* ✅ Meal Ideas Section */
+
+.meal-title {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+/* Sections */
+
+.meal-section {
+  margin-bottom: 25px;
+}
+
+.meal-section h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+/* ✅ Beautiful Food Cards Instead of Ugly Bullets */
+
+.meal-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.meal-section li {
+  background: #f9f9f9;
+  padding: 14px 18px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #eee;
+  transition: 0.2s;
+}
+
+.meal-section li:hover {
+  transform: translateX(4px);
+  background: #f1f8f4;
+}

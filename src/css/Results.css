@@ -1,0 +1,114 @@
+/* PAGE */
+
+.results-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #eefaf3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* CARD */
+
+.results-card {
+  width: 95%;
+  max-width: 1400px;
+  background: white;
+  border-radius: 18px;
+  padding: 40px 50px;
+  margin-top: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* TITLE */
+
+.results-card h2 {
+  font-size: 26px;
+  margin-bottom: 5px;
+}
+
+.results-card p {
+  color: #666;
+  margin-bottom: 35px;
+}
+
+/* NUTRIENT BLOCK */
+
+.nutrient {
+  margin-bottom: 28px;
+}
+
+/* ✅ PERFECT LEFT / RIGHT ALIGNMENT */
+
+.nutrient-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+
+.nutrient-header span:first-child {
+  font-weight: 500;
+}
+
+.nutrient-header span:last-child {
+  font-weight: 600;
+  color: #222;
+}
+
+/* BAR */
+
+.bar-bg {
+  width: 100%;
+  height: 10px;
+  background: #eeeeee;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+  border-radius: 10px;
+  transition: 0.4s ease;
+}
+
+/* COLORS */
+
+.bar-fill.protein {
+  background: #ef4444; /* red */
+}
+
+.bar-fill.carbs {
+  background: #f59e0b; /* yellow */
+}
+
+.bar-fill.fiber {
+  background: #d97706; /* orange */
+}
+
+.bar-fill.vitamins {
+  background: #f97316; /* bright orange */
+}
+
+.bar-fill.minerals {
+  background: #3b82f6; /* blue */
+}
+
+/* BACK BUTTON */
+
+.back-btn {
+  margin-top: 30px;
+  padding: 10px 22px;
+  border-radius: 10px;
+  border: none;
+  background: #0f172a;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.back-btn:hover {
+  background: black;
+}
